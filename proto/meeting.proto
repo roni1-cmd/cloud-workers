@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message AttachmentMetadata {
+  string filename = 1;
+  uint64 size_bytes = 2;
+  string hash_checksum = 3;
+}
+
+message FinalMeetingReport {
+  string meeting_id = 1;
+  string title = 2;
+  int64 duration_ms = 3;
+  repeated AttachmentMetadata files = 4;
+  bool verified_by_comelec = 5;
+}
