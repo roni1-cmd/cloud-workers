@@ -1,0 +1,5 @@
+/target
+/build
+/worker/shim.mjs
+wrangler.toml.bak
+.dev.vars
