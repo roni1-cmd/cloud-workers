@@ -1,0 +1,11 @@
+syntax = "proto3";
+package comelec;
+
+message MeetingRecord {
+  string id = 1;
+  string title = 2;
+  repeated string attendees = 3;
+  int64 created_at = 4;
+  int64 total_duration_ms = 5;
+  bool is_finalized = 6;
+}
