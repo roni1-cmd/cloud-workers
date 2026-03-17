@@ -54,16 +54,21 @@ Deploy to the Edge
 
 # API Reference Summary
 
-POST /api/v1/meeting
+# POST
+
+/api/v1/meeting
 Initializes a new session. Sets status to Open.
 
-POST /api/v1/meeting/:id/timer/toggle
+# POST 
+/api/v1/meeting/:id/timer/toggle
 Starts or pauses the official stopwatch. Calculates total duration with microsecond precision.
 
-PUT /api/v1/meeting/:id/file/:filename
+# PUT 
+/api/v1/meeting/:id/file/:filename
 Uploads official resolutions, attendance sheets, or audio recordings.
 
-PATCH /api/v1/meeting/:id/attendees
+# PATCH 
+/api/v1/meeting/:id/attendees
 Updates the list of present student leaders.
 
 
