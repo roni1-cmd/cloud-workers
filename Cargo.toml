@@ -1,5 +1,5 @@
 [package]
-name = "mom-worker"
+name = "cloud-workers"
 version = "0.1.0"
 edition = "2021"
 
