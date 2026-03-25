@@ -1,0 +1,20 @@
+name: COMELEC-CTUMC Production Deploy
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Rust & Zig
+        run: |
+          rustup target add wasm32-unknown-unknown
+          sudo snap install zig --classic --beta
+      - name: Build Polyglot Modules
+        run: |
+          chmod +x scripts/deploy_prod.sh
+          ./scripts/deploy_prod.sh
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
