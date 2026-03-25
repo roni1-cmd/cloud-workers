@@ -6,7 +6,7 @@ curl -X POST "$API_URL/api/v1/meeting" \
      -H "Content-Type: application/json" \
      -d '{"id":"CTU-2026-001", "title":"Election Code Review", "attendees":["Comm. Juan", "Comm. Maria"], "meeting_type":"Plenary"}'
 
-echo -e "\n2. Starting Timer..."
+echo -e "\n2. Starting Timer.."
 curl -X POST "$API_URL/api/v1/meeting/CTU-2026-001/timer/toggle"
 
 echo -e "\n3. Uploading File 1 of 15..."
