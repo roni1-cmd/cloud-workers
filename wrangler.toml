@@ -13,4 +13,4 @@ binding = "COMELEC_ATTACHMENTS"
 bucket_name = "meeting-files"
 
 [build]
-command = "cargo install -q worker-build && worker-build --release"
+command = "cargo install -q worker-build && worker-build -release"
