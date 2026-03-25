@@ -4,5 +4,5 @@ export fn calculate_simple_checksum(data: Uint8Array): u32 {
   for (let i = 0; i < data.length; i++) {
     hash = (hash << 5) - hash + data[i];
   }
-  return hash;
+  return hash
 }
